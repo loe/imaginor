@@ -10,7 +10,7 @@ class Imaginor
   def self.run!(*args)
     @@server = args[0] || ENV['SERVER']
     @@nick = args[1] || ENV['NICK']
-    @@channels = args[2..-1] || ENV['CHANNELS'].to_a
+    @@channels = args[2..-1] || ENV['CHANNELS'].split(',')
 
     self.new.start
   end
