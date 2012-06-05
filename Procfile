@@ -1,1 +1,1 @@
-worker:       bundle exec ruby bin/pictor
+worker:       bundle exec bin/imaginor
