@@ -1,7 +1,7 @@
 class ImaginorPlugin
   include Cinch::Plugin
 
-  match /imaginor (.+)/
+  match /imaginor (.+)/i
 
   def lookup(word)
     url = "http://ajax.googleapis.com/ajax/services/search/images?q=#{CGI.escape(word)}&v=1.0"
