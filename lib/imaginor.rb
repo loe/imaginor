@@ -8,9 +8,9 @@ require 'imaginor_plugin'
 
 class Imaginor
   def self.run!(*args)
-    @@server = args[0] || ENV['server']
-    @@nick = args[1] || ENV['nick']
-    @@channels = args[2..-1] || ENV['channels']
+    @@server = args[0] || ENV['SERVER']
+    @@nick = args[1] || ENV['NICK']
+    @@channels = args[2..-1] || ENV['CHANNELS']
 
     self.new.start
   end
